@@ -1,0 +1,4 @@
+GRANT SELECT, INSERT ON 
+	dbo.empresa 
+TO 
+	TESTE123;

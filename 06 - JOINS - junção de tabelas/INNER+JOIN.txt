@@ -1,0 +1,16 @@
+select 
+	f.MATRICULA,
+	f.NOME,
+	f.SALARIO,
+	f.CODDEPTO,
+	d.CODIGO,
+	d.DESCRICAO as 'departamento',
+	fun.DESCRICAO as 'função'
+
+from FUNCIONARIO as f
+	
+	inner join DEPARTAMENTO as d
+		on f.CODDEPTO = d.CODIGO
+	
+	inner join  FUNCAO as fun
+		on f.CODFUNCAO = fun.CODIGO

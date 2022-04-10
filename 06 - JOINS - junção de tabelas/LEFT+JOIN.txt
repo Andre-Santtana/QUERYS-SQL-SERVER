@@ -1,0 +1,8 @@
+SELECT 
+	F.NOME, 
+	D.DESCRICAO ,
+	d.CODIGO
+FROM FUNCIONARIO as F -- esquerda
+	LEFT JOIN DEPARTAMENTO as D -- direita
+		ON F.CODDEPTO = D.CODIGO
+where d.CODIGO is null

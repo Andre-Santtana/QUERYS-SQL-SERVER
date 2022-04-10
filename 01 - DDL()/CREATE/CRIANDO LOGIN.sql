@@ -1,0 +1,8 @@
+
+CREATE LOGIN TESTE123   
+    WITH PASSWORD = '12165565';  
+GO 
+
+
+
+

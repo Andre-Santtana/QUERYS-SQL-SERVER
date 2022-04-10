@@ -1,0 +1,14 @@
+
+' CRIANDO UMA PROCEDURE DE BUSCA COM LIKE E CONCATE'
+
+CREATE PROCEDURE BUSCAR
+	@palavra VARCHAR(10)
+AS
+
+	SELECT NomeDoContato, NomeDaEmpresa FROM TblClientes
+	WHERE NomeDoContato LIKE '%' + @palavra + '%'
+	ORDER BY NomeDoContato ASC
+
+GO
+
+EXEC BUSCAR 'AN'
